@@ -1,0 +1,11 @@
+system,block,start_ns,end_ns,n_frames,delta_total_mean_kcal_mol_rounded,delta_total_sd_kcal_mol_rounded,source
+CAL028,1,0,10,40,-61.33,3.96,completed MM/GBSA output
+CAL028,2,10,20,40,-61.68,3.52,completed MM/GBSA output
+CAL028,3,20,30,40,-60.13,3.78,completed MM/GBSA output
+CAL028,4,30,40,40,-58.64,3.34,completed MM/GBSA output
+CAL028,5,40,50,40,-60.32,3.38,completed MM/GBSA output
+CAL015,1,0,10,40,-60.64,3.41,completed MM/GBSA output
+CAL015,2,10,20,40,-58.24,2.56,completed MM/GBSA output
+CAL015,3,20,30,40,-60.40,3.69,completed MM/GBSA output
+CAL015,4,30,40,40,-58.99,4.04,completed MM/GBSA output
+CAL015,5,40,50,40,-59.04,2.87,completed MM/GBSA output
