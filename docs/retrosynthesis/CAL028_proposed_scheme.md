@@ -1,73 +1,25 @@
-# CAL-028: proposed convergent synthetic scheme
+# Proposed convergent synthesis of CAL-028
 
-The proposed route assembles **(S)-CAL-028** through two functionalized fragments. A protected stereodefined N-methyl-L-2,3-diaminopropionic-acid (Dap) derivative provides the amino-acid framework; a selectively N-benzylated pyrazole-3-carboxylic acid supplies the side-chain amide. The final operation unmasks the carboxylic acid.
+**Scheme 1** illustrates the molecular structures of the proposed starting materials, intermediates, coupling partners and stereodefined CAL-028 product. The route is organized around two separately prepared fragments followed by a final amide coupling and ester hydrolysis.
 
-## Scheme 1. Convergent preparation of CAL-028
+![Chemical structure scheme: two convergent branches A0–A2 and B0–B4, amide coupling to B5, and hydrolysis to (S)-CAL-028](CAL028_proposed_convergent_synthesis.png)
 
-```mermaid
-flowchart TB
-  subgraph A["Branch A — pyrazole acid"]
-    A0["A0 · Methyl 1H-pyrazole-3-carboxylate"]
-    A1["A1 · Methyl N-(2,4-difluorobenzyl)pyrazole-3-carboxylate"]
-    A2["A2 · N-(2,4-difluorobenzyl)pyrazole-3-carboxylic acid"]
-    A0 -->|"2,4-difluorobenzyl bromide; K₂CO₃"| A1
-    A1 -->|"LiOH; THF/H₂O"| A2
-  end
-  subgraph B["Branch B — stereodefined N-methyl-Dap"]
-    B0["B0 · Fmoc-Nα-methyl-L-Dap(Nβ-Boc)-OH"]
-    B1["B1 · Protected methyl ester"]
-    B2["B2 · Nα-methyl-L-Dap(Nβ-Boc)-OMe"]
-    B3["B3 · Nα-(pyrazine-2-carbonyl) derivative"]
-    B4["B4 · Free Nβ-amino methyl ester"]
-    B0 -->|"Methyl ester formation"| B1
-    B1 -->|"Fmoc removal"| B2
-    B2 -->|"Pyrazine-2-carboxylic acid; amide coupling"| B3
-    B3 -->|"Nβ-Boc removal"| B4
-  end
-  A2 -->|"Convergent Nβ-amide coupling"| B5["B5 · CAL-028 methyl ester"]
-  B4 -->|"Convergent Nβ-amide coupling"| B5
-  B5 -->|"Selective methyl ester hydrolysis"| B6["B6 · (S)-CAL-028"]
-  style B6 stroke:#222,stroke-width:2px
-```
+[Open the full-resolution structural scheme](CAL028_proposed_convergent_synthesis.png)
 
-This scheme is based on the molecular structure of CAL-028 and the source route records. The Nα-methyl group is present in the protected starting material, avoiding an unreliable late-stage N-methylation of an assembled multifunctional amide.
+## Route overview
 
-## Intermediate identities
+**Branch A (A0–A2).** Pyrazole ester N-benzylation with the 2,4-difluorobenzyl substituent, followed by conversion of the methyl ester into the coupling-ready carboxylic acid.
 
-| ID | Intermediate | Isomeric SMILES |
-| --- | --- | --- |
-| A0 | Methyl 1H-pyrazole-3-carboxylate | `COC(=O)c1cc[nH]n1` |
-| A1 | N-(2,4-Difluorobenzyl) pyrazole methyl ester | `COC(=O)c1ccn(Cc2ccc(F)cc2F)n1` |
-| A2 | N-(2,4-Difluorobenzyl) pyrazole-3-carboxylic acid | `O=C(O)c1ccn(Cc2ccc(F)cc2F)n1` |
-| B0 | Fmoc-Nα-methyl-L-Dap(Nβ-Boc)-OH | `CN(C(=O)OCC1c2ccccc2-c2ccccc21)[C@@H](CNC(=O)OC(C)(C)C)C(=O)O` |
-| B1 | Protected amino-acid methyl ester | `COC(=O)[C@H](CNC(=O)OC(C)(C)C)N(C)C(=O)OCC1c2ccccc2-c2ccccc21` |
-| B2 | Nα-methyl-L-Dap(Nβ-Boc)-OMe | `CN[C@@H](CNC(=O)OC(C)(C)C)C(=O)OC` |
-| B3 | Nα-(Pyrazine-2-carbonyl)-protected derivative | `COC(=O)[C@H](CNC(=O)OC(C)(C)C)N(C)C(=O)c1cnccn1` |
-| B4 | Nβ-free amine | `COC(=O)[C@H](CN)N(C)C(=O)c1cnccn1` |
-| B5 | CAL-028 methyl ester | `COC(=O)[C@H](CNC(=O)c1ccn(Cc2ccc(F)cc2F)n1)N(C)C(=O)c1cnccn1` |
-| B6 | (S)-CAL-028 | `CN(C(=O)c1cnccn1)[C@@H](CNC(=O)c1ccn(Cc2ccc(F)cc2F)n1)C(=O)O` |
+**Branch B (B0–B4).** The protected stereodefined Nα-methyl-L-diaminopropionic acid provides the central building block. Methyl esterification, Fmoc deprotection, Nα-acylation with pyrazine-2-carboxylic acid, and Nβ-Boc deprotection yield the side-chain amino coupling partner.
 
-## Proposed transformation and selectivity plan
+**Convergent assembly (B5–B6).** Coupling A2 with B4 yields the protected CAL-028 methyl ester. Controlled hydrolysis releases the terminal carboxylic acid while retaining the designated stereochemistry.
 
-| Step | Transformation | Initial reagents/conditions to evaluate | Analytical focus |
-| --- | --- | --- | --- |
-| A1 | Pyrazole N-benzylation | 2,4-Difluorobenzyl bromide, K₂CO₃; MeCN/DMF | N-regioisomer assignment (HMBC/NOESY) |
-| A2 | Methyl ester hydrolysis | LiOH; THF/H₂O | Correct carboxylic acid |
-| B1 | Dap methyl ester formation | Mild esterification of protected amino acid | Retention of α-stereochemistry |
-| B2 | Fmoc deprotection | Piperidine/DMF | Free Nα-methyl amine; Nβ-Boc retained |
-| B3 | Nα-acylation | Pyrazine-2-carboxylic acid; HATU/DIPEA or COMU-based coupling | Hindered tertiary-amide formation |
-| B4 | Nβ-Boc deprotection | TFA/DCM | Primary amine unmasked; methyl ester retained |
-| B5 | Convergent amide coupling | A2 + B4; coupling reagent/base | Correct side-chain amide and regioisomer |
-| B6 | Ester-to-acid conversion | LiOH, aqueous cosolvent | CAL-028 identity and enantiopurity |
+The methyl substituent on Nα is already present in the protected amino-acid starting material. Reaction labels indicate proposed operations and initial reagent selections, not experimentally optimized conditions.
 
-Proposed starting material **Fmoc-Nα-methyl-L-Dap(Nβ-Boc)-OH** has been listed as CAS **2973753-87-4** in the route-planning records; procurement identity and stereochemistry should be matched to the vendor certificate. Pyrazole N-regioselectivity and preservation of the L-Dap α-stereocenter are key route-control points.
+## Reproducible chemical identities
 
-The scheme is a **proposed retrosynthetic/synthetic plan**, not an experimental synthesis report. Conditions are practical screens rather than optimized procedures for CAL-028.
+The scheme shows **chemical structures**, rather than name-only boxes or SMILES strings. Machine-readable stereodefined structures and precursor identities remain available separately in [intermediates.csv](CAL028_intermediates.csv) and the planned transformations in [route_steps.csv](CAL028_route_steps.csv). The figure can be regenerated with [draw_CAL028_scheme.py](draw_CAL028_scheme.py) using RDKit.
 
-## Source files and reproduction
+The associated [ASKCOS source export](ASKCOS_CAL028_treeResults.json) and [route-count audit](ASKCOS_CAL028_tree_audit.md) document the automated retrosynthetic predictions; Scheme 1 presents a separately formulated chemically convergent route.
 
-- The intermediates and route conditions originate from the project's CAL-028 route bundle.
-- Recreate a structure-bearing figure using [`draw_CAL028_scheme.py`](draw_CAL028_scheme.py), which uses RDKit and Matplotlib to plot the chemically defined intermediates.
-- The generated target is the CAL-028 entry in `results/final_candidates.csv`.
-
-Related descriptions of the proposed route and its mechanistic rationale may be used in the research article, which is maintained separately from the repository.
+**Status:** Proposed synthesis; compound isolation, analytical identification and yields have not been reported.
