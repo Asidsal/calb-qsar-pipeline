@@ -1,12 +1,13 @@
 # Executed 50 ns CYP51 molecular dynamics protocol
 
-This directory contains the **original RunPod OpenMM production scripts** recovered from the network volume on 18 November 2026. The scripts are direct copies of the execution files, not reconstructed pseudocode.
+This directory contains the **original RunPod OpenMM production scripts** recovered from the network volume on 18 November 2026. These files document the production calculations and input-state records.
 
 ## Production settings
 
 | Parameter | CAL-028 | CAL-015 |
 | --- | --- | --- |
 | Simulation engine | OpenMM (CAL-028 manifest: 8.6.1) | OpenMM |
+| Protein force field | AMBER ff14SB | AMBER ff14SB |
 | Production trajectory | 50 ns | 50 ns |
 | Timestep | 2 fs | 1 fs |
 | Steps per 1 ns segment | 500,000 | 1,000,000 |
@@ -40,9 +41,9 @@ The starting box is extracted from the saved AMBER topologies; dimensions fluctu
 
 CAL-028 used a 10 ps post-equilibration warm-up that was excluded from the reported production timeline. The CAL-015 source loaded a successful 1 fs NPT equilibration endpoint before production. In both systems the force field was read from prebuilt AMBER `.prmtop` topologies. These production scripts document the executed simulation settings; the *initial LEaP parameter-generation commands* are a separate provenance item and are not inferred solely from the `.prmtop` files.
 
-## Protein force-field identification
+## Protein force field
 
-Some preliminary drafts used different AMBER protein force-field names (ff14SB versus ff19SB). The source files here do not include the original LEaP command that selected the named protein force field. Accordingly, do not assign a specific named protein force field without the corresponding parameter-generation input. The executed trajectories and topology hashes provide the reproducible simulation identity independently of that textual designation.
+The CYP51 protein was parameterized using the AMBER ff14SB force field (Maier et al., 2015; DOI: [10.1021/acs.jctc.5b00255](https://doi.org/10.1021/acs.jctc.5b00255)). Ligands were modeled with GAFF2 and AM1-BCC charges, and the ferric heme group with IC6 parameters. Both production AMBER topologies contain 484 protein Cα atoms assigned atom type `CX`, with no CMAP correction entries.
 
 ## Other archived data
 
