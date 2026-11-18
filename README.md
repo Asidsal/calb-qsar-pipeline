@@ -1,57 +1,41 @@
-# Scaffold-Aware QSAR Pipeline for *Candida albicans* Antifungal Activity
+# Chemotype-aware antifungal QSAR, molecular design and CYP51 binding studies
 
-This repository contains the complete computational pipeline accompanying the manuscript:
+A reproducible computational discovery workflow for *Candida albicans* whole-cell antifungal activity: curated ChEMBL activity records, scaffold- and chemotype-aware QSAR validation, conformal applicability assessment, molecular generation, structure-based prioritization, and 50 ns CYP51 molecular dynamics and MM/GBSA characterization of CAL-028 and CAL-015.
 
-> **Scaffold-Aware QSAR Modeling of *Candida albicans* Antifungal Activity: Applicability Domain Characterization, Model Validation, and Genetic Algorithm-Guided Design of Novel Triazole Candidates**  
-> Abubakar Siddiq Salihu and Wan Mohd Nuzul Hakimi Wan Salleh  
-> *Journal of Chemical Information and Modeling*, 2026 (under review)
+This repository contains research **code, structured input data, model/result tables, molecular structures and analysis workflows**. The manuscript and its Supporting Information are maintained separately and are **not included here**.
 
-The pipeline curates 11,245 MIC records from ChEMBL 36, trains and benchmarks seven machine learning classifiers under a stratified Murcko scaffold split, characterises the model applicability domain (AD) using a Tanimoto k-nearest-neighbour index, and applies a pharmacophore-constrained genetic algorithm to generate 15 novel triazole antifungal candidates all within the model AD (predicted probability 0.709-0.959).
+## Research scope and findings
 
----
+- **Data:** 11,245 curated ChEMBL 36 MIC records (4,416 active; 6,829 inactive), activity cutoff 8 μg/mL.
+- **Generalization:** scaffold-split MCC 0.667; leave-one-chemotype-out tests examine the effect of chemical distribution shift and define the model's transferability across chemotypes.
+- **Uncertainty assessment:** Mondrian conformal prediction and nearest-neighbor applicability assessment, including subgroup-conditional coverage analyses.
+- **Design:** graph genetic algorithm with BRICS-fragment mutation, multiobjective survivor selection and two molecular-generation tracks. The primary structural filter excludes imidazole and triazole motifs; other heterocycles, including pyrazoles, are permitted.
+- **Docking:** CYP51 structure 5TZ1, reference redocking and enrichment validation, followed by candidate prioritization.
+- **Dynamics:** CAL-028 and CAL-015 were individually simulated for **50 ns**, with RMSD, RMSF, SASA, hydrogen-bond timelines, residue-contact maps, heme geometry and pose-evolution analyses.
+- **MM/GBSA:** 200 frames per compound over five 10 ns blocks, GB-OBC2 (igb=5), mbondi2 radii and 0.150 M salt. Frame-averaged ΔTOTAL: **CAL-028 −60.42 ± 3.72 kcal/mol** and **CAL-015 −59.46 ± 3.45 kcal/mol**, reported as MM/GBSA energies without entropic correction.
+- **Synthesis planning:** a convergent **proposed retrosynthetic route for CAL-028**, with a stereodefined N-methyl-L-Dap building block, N-benzylpyrazole coupling fragment and amide-convergence strategy. See [proposed synthesis scheme](docs/retrosynthesis/CAL028_proposed_scheme.md).
 
-## Repository structure
+## Research files
 
-```
-calb-qsar-pipeline/
-├── notebooks/
-│   ├── 01_data_curation.ipynb           ChEMBL 36 extraction and curation
-│   ├── 02_scaffold_split_features.ipynb Stratified scaffold split + ECFP4/descriptor generation
-│   ├── 03_model_training.ipynb          7-model benchmark + 5-fold CV + scaffold test evaluation
-│   ├── 04_shap_ad_analysis.ipynb        SHAP feature importance + AD characterisation
-│   └── 05_GA_design_colab.ipynb         GA-guided de novo triazole generation (Google Colab)
-├── data/
-│   └── CAlbicans_curated.csv            Curated dataset (11,245 compounds, binary MIC labels)
-├── requirements.txt
-└── README.md
-```
+| Path | Contents |
+| --- | --- |
+| `data/` | Curated MIC data, training/test partitions and chemotype information |
+| `notebooks/` | Data curation, feature construction and model training |
+| `models/` | Serialized predictive assets where included |
+| `src/` | Molecular generation and documented analysis code |
+| `results/` | Validation metrics, molecular-generation and candidate data |
+| `docking/` | Protein inputs, validated docking box and reference structures |
+| `md/` | Prepared CYP51–ligand structures, 50 ns analyses and MM/GBSA results |
+| `docs/retrosynthesis/` | CAL-028 synthetic planning: scheme, building blocks and route steps |
 
----
+Detailed MM/GBSA summaries are in [`md/mmgbsa/results/`](md/mmgbsa/results/). The complete production DCD trajectories (8.44 GiB across CAL-028 and CAL-015) and full per-frame energy logs are kept in separate project storage; lighter-derived datasets, visualization files and reproducible workflows can be kept in GitHub.
 
-## Requirements
+## Reproduction
 
-```bash
-pip install -r requirements.txt
-```
+Use the versions recorded by the workflow; for the core QSAR pipeline, run the supplied notebooks in order after installing the indicated dependencies. The GA and result files use the recorded random seed and structural-filter definition. The MD analyses read AMBER `.prmtop` and DCD inputs. MM/GBSA uses the AmberTools `MMPBSA.py` program, with the heme included as receptor cofactor.
 
-Python 3.10+ recommended. Notebook 5 is designed for Google Colab (CPU runtime).
+The proposed retrosynthesis is supplied as a chemical-design route and intermediate structure set. The route is separate from the calculated binding-mode and QSAR results.
 
----
+## Citation and license
 
-## Data
-
-ChEMBL 36 is required to reproduce the curation step (Notebook 1). Download the SQLite version from the [ChEMBL downloads page](https://chembl.gitbook.io/chembl-interface-documentation/downloads) and update `DB_PATH` in Notebook 1 accordingly. The curated output `data/CAlbicans_curated.csv` is provided directly so Notebooks 2-4 can be run without a local ChEMBL installation.
-
----
-
-## Usage
-
-Run notebooks in order: 01 -> 02 -> 03 -> 04. Notebook 05 is standalone and runs on Google Colab; upload the four files listed in its header cell when prompted.
-
----
-
-## Contact
-
-Abubakar Siddiq Salihu - abusiddiq.salihu@umyu.edu.ng  
-ORCID: 0000-0002-4425-7524  
-Scopus ID: 58105245900
+This is an evolving research code/data repository; a publication venue and acceptance status are **not specified**. Code is released under the MIT license where covered by [LICENSE](LICENSE). ChEMBL-derived data retain their applicable terms and attribution.
