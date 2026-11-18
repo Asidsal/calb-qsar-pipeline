@@ -1,0 +1,7 @@
+CAL028 topology: 75277 atoms; 22941 residues; periodic box (Å,deg): [102.730774 102.730774 102.730774 109.471219 109.471219 109.471219]
+Water residues: 22451
+First water atomic charges: [('O', -0.834, 'OW'), ('H1', 0.417, 'HW'), ('H2', 0.417, 'HW')]
+
+CAL015 topology: 75288 atoms; 22939 residues; periodic box (Å,deg): [102.730774 102.730774 102.730774 109.471219 109.471219 109.471219]
+Water residues: 22451
+First water atomic charges: [('O', -0.834, 'OW'), ('H1', 0.417, 'HW'), ('H2', 0.417, 'HW')]
