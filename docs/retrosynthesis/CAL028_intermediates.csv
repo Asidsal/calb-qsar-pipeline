@@ -1,0 +1,11 @@
+id,name,isomeric_smiles,formula,MW_g_mol,exact_mass,theoretical_MplusH,stereocenters_CIP,role,status
+A0,Methyl 1H-pyrazole-3-carboxylate,COC(=O)c1cc[nH]n1,C5H6N2O2,126.115,126.04293,127.05020,,Pyrazole methyl ester starting material,Starting material
+A1,Methyl 1-(2,4-difluorobenzyl)-1H-pyrazole-3-carboxylate,COC(=O)c1ccn(Cc2ccc(F)cc2F)n1,C12H10F2N2O2,252.220,252.07103,253.07831,,N-benzylated regioisomer to characterize,Proposed intermediate
+A2,1-(2,4-Difluorobenzyl)-1H-pyrazole-3-carboxylic acid,O=C(O)c1ccn(Cc2ccc(F)cc2F)n1,C11H8F2N2O2,238.193,238.05538,239.06266,,Pyrazole acid coupling fragment,Proposed intermediate
+B0,Fmoc-Nalpha-methyl-L-Dap(Nbeta-Boc)-OH,CN(C(=O)OCC1c2ccccc2-c2ccccc21)[C@@H](CNC(=O)OC(C)(C)C)C(=O)O,C24H28N2O6,440.496,440.19474,441.20201,S,Protected stereodefined amino acid building block,Starting material
+B1,Fmoc-Nalpha-methyl-L-Dap(Nbeta-Boc)-OMe,COC(=O)[C@H](CNC(=O)OC(C)(C)C)N(C)C(=O)OCC1c2ccccc2-c2ccccc21,C25H30N2O6,454.523,454.21039,455.21766,S,Carboxylic acid methyl ester,Proposed intermediate
+B2,Methyl Nalpha-methyl-L-Dap(Nbeta-Boc),CN[C@@H](CNC(=O)OC(C)(C)C)C(=O)OC,C10H20N2O4,232.280,232.14231,233.14958,S,Fmoc-free N-methyl amine,Proposed intermediate
+B3,Methyl Nalpha-methyl-Nalpha-(pyrazine-2-carbonyl)-L-Dap(Nbeta-Boc),COC(=O)[C@H](CNC(=O)OC(C)(C)C)N(C)C(=O)c1cnccn1,C15H22N4O5,338.364,338.15902,339.16630,S,N-methyl tertiary amide,Proposed intermediate
+B4,Methyl Nalpha-methyl-Nalpha-(pyrazine-2-carbonyl)-L-Dap,COC(=O)[C@H](CN)N(C)C(=O)c1cnccn1,C10H14N4O3,238.247,238.10659,239.11387,S,Side-chain primary amine,Proposed intermediate
+B5,CAL-028 methyl ester,COC(=O)[C@H](CNC(=O)c1ccn(Cc2ccc(F)cc2F)n1)N(C)C(=O)c1cnccn1,C21H20F2N6O4,458.425,458.15141,459.15869,S,Convergent coupling product,Proposed intermediate
+B6,CAL-028 target,CN(C(=O)c1cnccn1)[C@@H](CNC(=O)c1ccn(Cc2ccc(F)cc2F)n1)C(=O)O,C20H18F2N6O4,444.398,444.13576,445.14304,S,Target free acid,Target
