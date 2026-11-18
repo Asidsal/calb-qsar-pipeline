@@ -15,26 +15,24 @@ This repository contains research **code, structured input data, model/result ta
 - **MM/GBSA:** 200 frames per compound over five 10 ns blocks, GB-OBC2 (igb=5), mbondi2 radii and 0.150 M salt. Frame-averaged ΔTOTAL: **CAL-028 −60.42 ± 3.72 kcal/mol** and **CAL-015 −59.46 ± 3.45 kcal/mol**, reported as MM/GBSA energies without entropic correction.
 - **Synthesis planning:** a convergent **proposed retrosynthetic route for CAL-028**, with a stereodefined N-methyl-L-Dap building block, N-benzylpyrazole coupling fragment and amide-convergence strategy. See [proposed synthesis scheme](docs/retrosynthesis/CAL028_proposed_scheme.md).
 
-## Research files
+## Current public repository layout
 
-| Path | Contents |
+| Path | Public contents |
 | --- | --- |
-| `data/` | Curated MIC data, training/test partitions and chemotype information |
-| `notebooks/` | Data curation, feature construction and model training |
-| `models/` | Serialized predictive assets where included |
-| `src/` | Molecular generation and documented analysis code |
-| `results/` | Validation metrics, molecular-generation and candidate data |
-| `docking/` | Protein inputs, validated docking box and reference structures |
-| `md/` | Prepared CYP51–ligand structures, 50 ns analyses and MM/GBSA results |
-| `docs/retrosynthesis/` | CAL-028 synthetic planning: scheme, building blocks and route steps |
+| `data/CAlbicans_curated.csv` | Curated ChEMBL whole-cell MIC records |
+| `notebooks/` | Curation, split/feature development, classification and the earlier GA design notebook |
+| `docs/retrosynthesis/` | Proposed CAL-028 convergent synthesis scheme, stereodefined intermediate SMILES, route-step CSV and RDKit drawing script |
+| `md/analysis_50ns/` | Summary of the independent CAL-028 and CAL-015 50 ns trajectory measurements |
+| `md/mmgbsa/` | Completed MM/GBSA component means and five time-block results |
+| `requirements.txt` | Core notebook environment specification |
 
-Detailed MM/GBSA summaries are in [`md/mmgbsa/results/`](md/mmgbsa/results/). The complete production DCD trajectories (8.44 GiB across CAL-028 and CAL-015) and full per-frame energy logs are kept in separate project storage; lighter-derived datasets, visualization files and reproducible workflows can be kept in GitHub.
+The extended research archive also preserves the molecular-generation source, detailed docking records, trained model, complete derived trajectories and visualization resources. Those larger research assets are distributed separately from the current public GitHub files. The full production DCD/AMBER files and per-frame GB results remain in separate project storage.
 
-## Reproduction
+## Research reproducibility and interpretation
 
-Use the versions recorded by the workflow; for the core QSAR pipeline, run the supplied notebooks in order after installing the indicated dependencies. The GA and result files use the recorded random seed and structural-filter definition. The MD analyses read AMBER `.prmtop` and DCD inputs. MM/GBSA uses the AmberTools `MMPBSA.py` program, with the heme included as receptor cofactor.
+The repository supplies primary curation and modelling notebooks and publishes the exact derived MD/MM/GBSA statistics above. The simulation sources use AMBER topology and DCD trajectories; MM/GBSA uses the AmberTools `MMPBSA.py` single-trajectory protocol with heme included in the receptor. The proposed CAL-028 retrosynthesis records specific intermediate structures and transformations, with a structure-bearing diagram reproducible from the RDKit drawing script.
 
-The proposed retrosynthesis is supplied as a chemical-design route and intermediate structure set. The route is separate from the calculated binding-mode and QSAR results.
+The computational findings are interpreted in the QSAR, docking, MD and MM/GBSA frameworks described in their source records; their role is to prioritize and characterize new antifungal chemical matter.
 
 ## Citation and license
 
