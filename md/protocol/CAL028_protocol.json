@@ -1,0 +1,11 @@
+{
+  "openmm": "8.6.1",
+  "topology_sha256": "dbd5aba85133d73543e8ae6f0712c0cfa317452c0a88a11b84c9492efb7d16fb",
+  "state_sha256": "e462ce8cfc36313d7516a405784e1582c27c3482154b3ab9f74265a3d8672480",
+  "temperature_K": 300,
+  "pressure_bar": 1,
+  "dt_fs": 2,
+  "precision": "mixed",
+  "steps_per_segment": 500000,
+  "report_every_steps": 5000
+}
