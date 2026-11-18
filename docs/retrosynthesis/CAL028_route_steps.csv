@@ -1,5 +1,5 @@
 step,purpose,input,output,candidate_reagents,candidate_temperature,quality_control,risk
-A1,N-benzylate pyrazole methyl ester,A0 + 2,4-difluorobenzyl bromide,A1,K2CO3; dry MeCN or DMF,room temperature to 50 C; screen,N1/N2 regioisomer separation; HMBC/NOESY and LC-MS,N-alkylation regioselectivity
+A1,N-benzylate pyrazole methyl ester,"A0 + 2,4-difluorobenzyl bromide",A1,K2CO3; dry MeCN or DMF,room temperature to 50 C; screen,N1/N2 regioisomer separation; HMBC/NOESY and LC-MS,N-alkylation regioselectivity
 A2,Hydrolyze pyrazole methyl ester,A1,A2,LiOH in THF/water,0 to 25 C; monitor consumption,LC-MS and NMR; ester consumption,Hydrolysis and isolation
 B1,Form Dap carboxyl methyl ester,B0,B1,Controlled esterification,0 to 25 C; mild conditions,LC-MS and chiral assay,Maintain stereochemistry
 B2,Remove alpha Fmoc,B1,B2,Piperidine/DMF,room temperature; brief exposure,Fmoc loss; Nbeta-Boc retained,Selective deprotection
