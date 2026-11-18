@@ -1,0 +1,9 @@
+step,purpose,input,output,candidate_reagents,candidate_temperature,quality_control,risk
+A1,N-benzylate pyrazole methyl ester,A0 + 2,4-difluorobenzyl bromide,A1,K2CO3; dry MeCN or DMF,room temperature to 50 C; screen,N1/N2 regioisomer separation; HMBC/NOESY and LC-MS,N-alkylation regioselectivity
+A2,Hydrolyze pyrazole methyl ester,A1,A2,LiOH in THF/water,0 to 25 C; monitor consumption,LC-MS and NMR; ester consumption,Hydrolysis and isolation
+B1,Form Dap carboxyl methyl ester,B0,B1,Controlled esterification,0 to 25 C; mild conditions,LC-MS and chiral assay,Maintain stereochemistry
+B2,Remove alpha Fmoc,B1,B2,Piperidine/DMF,room temperature; brief exposure,Fmoc loss; Nbeta-Boc retained,Selective deprotection
+B3,Acylate alpha N-methyl amine,B2 + pyrazine-2-carboxylic acid,B3,HATU/DIPEA or COMU coupling,0 to 25 C; screen,LC-MS/NMR; Nbeta-Boc and stereochemistry,Hindered tertiary-amide coupling
+B4,Remove beta Boc,B3,B4,TFA/DCM,0 to 25 C; short exposure,LC-MS; free amine and methyl ester retained,Selective deprotection
+B5,Acylate primary beta amino group,B4 + A2,B5,HATU/DIPEA; amine salt neutralized,0 to 25 C; screen,HRMS and 2D NMR; pyrazole regioisomer,Amide coupling selectivity
+B6,Unmask final carboxylic acid,B5,B6,LiOH in THF/water or MeOH,0 to 25 C; short exposure,HRMS; 1D/2D NMR; HPLC; chiral HPLC,Stereochemical retention during hydrolysis
