@@ -37,3 +37,10 @@ The computational findings are interpreted in the QSAR, docking, MD and MM/GBSA 
 ## Citation and license
 
 This is an evolving research code/data repository; a publication venue and acceptance status are **not specified**. Code is released under the MIT license where covered by [LICENSE](LICENSE). ChEMBL-derived data retain their applicable terms and attribution.
+
+## Source evidence for synthesis planning and molecular dynamics
+
+- [ASKCOS original CAL-028 retrosynthetic tree export](docs/retrosynthesis/ASKCOS_CAL028_treeResults.json): 200 trees from the [shared ASKCOS result](https://askcos.mit.edu/results?shared=0a31ab2d-cd9b-4b72-a129-7f43a8fd4bfb), with [reproducible route-count audit](docs/retrosynthesis/ASKCOS_CAL028_tree_audit.md) (56 four-step, 144 five-step, 22 distinct reaction transformations; 68/66/66 first-disconnection co-reactants).
+- [Executed 50 ns OpenMM production protocol](md/protocol/README.md) and its original [CAL-028](md/protocol/CAL028_50ns.py) and [CAL-015](md/protocol/CAL015_production_50ns_1fs.py) scripts. These document 2 fs and 1 fs production steps, respectively, 300 K and 1 bar Langevin/Monte Carlo conditions, PME and 1 nm cutoff, explicit TIP3P water and the periodic truncated-octahedral simulation cell.
+
+The manuscript and Supporting Information are **not** part of this repository.
