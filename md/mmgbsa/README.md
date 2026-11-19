@@ -1,6 +1,6 @@
 <h1 align="center">CYP51 single-trajectory MM/GBSA</h1>
 
-The CAL-028 and CAL-015 systems were evaluated independently using AmberTools 26 `MMPBSA.py`, sampling 200 frames throughout the corresponding 50 ns production trajectory (five 10 ns blocks, 40 frames each).
+The CAL-028 and CAL-015 systems were evaluated separately using AmberTools 26 `MMPBSA.py`, sampling 200 frames throughout the corresponding 50 ns production trajectory (five 10 ns blocks, 40 frames each).
 
 
 ## Contents
