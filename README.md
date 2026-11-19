@@ -1,19 +1,30 @@
-# Chemotype-aware antifungal QSAR, molecular design and CYP51 binding studies
+<h1 align="center">Chemotype-aware antifungal QSAR, molecular design and CYP51 binding studies</h1>
 
 A reproducible computational discovery workflow for *Candida albicans* whole-cell antifungal activity: curated ChEMBL activity records, scaffold- and chemotype-aware QSAR validation, conformal applicability assessment, molecular generation, structure-based prioritization, and 50 ns CYP51 molecular dynamics and MM/GBSA characterization of CAL-028 and CAL-015.
 
 This repository contains research **code, structured input data, model/result tables, molecular structures and analysis workflows**. The manuscript and its Supporting Information are maintained separately and are **not included here**.
 
+
+## Contents
+
+- [Research scope and findings](#research-scope-and-findings)
+- [Current public repository layout](#current-public-repository-layout)
+- [Research reproducibility and interpretation](#research-reproducibility-and-interpretation)
+- [Citation and license](#citation-and-license)
+- [Source evidence for synthesis planning and molecular dynamics](#source-evidence-for-synthesis-planning-and-molecular-dynamics)
+
 ## Research scope and findings
 
-- **Data:** 11,245 curated ChEMBL 36 MIC records (4,416 active; 6,829 inactive), activity cutoff 8 μg/mL.
-- **Generalization:** scaffold-split MCC 0.667; leave-one-chemotype-out tests examine the effect of chemical distribution shift and define the model's transferability across chemotypes.
-- **Uncertainty assessment:** Mondrian conformal prediction and nearest-neighbor applicability assessment, including subgroup-conditional coverage analyses.
-- **Design:** graph genetic algorithm with BRICS-fragment mutation, multiobjective survivor selection and two molecular-generation tracks. The primary structural filter excludes imidazole and triazole motifs; other heterocycles, including pyrazoles, are permitted.
-- **Docking:** CYP51 structure 5TZ1, reference redocking and enrichment validation, followed by candidate prioritization.
-- **Dynamics:** CAL-028 and CAL-015 were individually simulated for **50 ns**, with RMSD, RMSF, SASA, hydrogen-bond timelines, residue-contact maps, heme geometry and pose-evolution analyses.
-- **MM/GBSA:** 200 frames per compound over five 10 ns blocks, GB-OBC2 (igb=5), mbondi2 radii and 0.150 M salt. Frame-averaged ΔTOTAL: **CAL-028 −60.42 ± 3.72 kcal/mol** and **CAL-015 −59.46 ± 3.45 kcal/mol**, reported as MM/GBSA energies without entropic correction.
-- **Synthesis planning:** a convergent **proposed retrosynthetic route for CAL-028**, with a stereodefined N-methyl-L-Dap building block, N-benzylpyrazole coupling fragment and amide-convergence strategy. See [proposed synthesis scheme](docs/retrosynthesis/CAL028_proposed_scheme.md).
+| Area | Findings |
+| --- | --- |
+| **Data:** | 11,245 curated ChEMBL 36 MIC records (4,416 active; 6,829 inactive), activity cutoff 8 μg/mL. |
+| **Generalization:** | scaffold-split MCC 0.667; leave-one-chemotype-out tests examine the effect of chemical distribution shift and define the model's transferability across chemotypes. |
+| **Uncertainty assessment:** | Mondrian conformal prediction and nearest-neighbor applicability assessment, including subgroup-conditional coverage analyses. |
+| **Design:** | graph genetic algorithm with BRICS-fragment mutation, multiobjective survivor selection and two molecular-generation tracks. The primary structural filter excludes imidazole and triazole motifs; other heterocycles, including pyrazoles, are permitted. |
+| **Docking:** | CYP51 structure 5TZ1, reference redocking and enrichment validation, followed by candidate prioritization. |
+| **Dynamics:** | CAL-028 and CAL-015 were individually simulated for **50 ns**, with RMSD, RMSF, SASA, hydrogen-bond timelines, residue-contact maps, heme geometry and pose-evolution analyses. |
+| **MM/GBSA:** | 200 frames per compound over five 10 ns blocks, GB-OBC2 (igb=5), mbondi2 radii and 0.150 M salt. Frame-averaged ΔTOTAL: **CAL-028 −60.42 ± 3.72 kcal/mol** and **CAL-015 −59.46 ± 3.45 kcal/mol**, reported as MM/GBSA energies without entropic correction. |
+| **Synthesis planning:** | a convergent **proposed retrosynthetic route for CAL-028**, with a stereodefined N-methyl-L-Dap building block, N-benzylpyrazole coupling fragment and amide-convergence strategy. See [proposed synthesis scheme](docs/retrosynthesis/CAL028_proposed_scheme.md). |
 
 ## Current public repository layout
 
