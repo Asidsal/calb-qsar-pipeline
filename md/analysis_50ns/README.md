@@ -1,6 +1,12 @@
-# Molecular dynamics analysis — CYP51 with CAL-028 and CAL-015
+<h1 align="center">Molecular dynamics analysis — CYP51 with CAL-028 and CAL-015</h1>
 
 Independent 50 ns production trajectories were analyzed for each CYP51–ligand complex.
+
+
+## Contents
+
+- [Summary](#summary)
+- [Individual binding modes](#individual-binding-modes)
 
 ## Summary
 
