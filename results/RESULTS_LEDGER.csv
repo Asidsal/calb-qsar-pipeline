@@ -1,0 +1,67 @@
+section,quantity,value,source_file
+Dataset,curated compounds,"11,245",chemotype_assignments.csv
+Dataset,active / inactive,"4,416 / 6,829",chemotype_assignments.csv
+Dataset,base rate active,39.3%,chemotype_assignments.csv
+Dataset,"triazoles, n and % active","1,792; 86.6%",chemotype_assignments.csv
+Dataset,thiocarbamates % active,3.6%,chemotype_assignments.csv
+Dataset,C. albicans Erg11 compounds with potency,34,erg11_curated.csv
+Dataset,human CYP51 compounds with potency,59,human_cyp51_curated.csv
+Dataset,Erg11 set azole fraction,85.3%,erg11_curated.csv
+Split,scaffold split MCC [95% CI],"0.667 [0.635, 0.696]",generalization_benchmark.csv
+Split,scaffold split sensitivity,0.740 (683/923),generalization_benchmark.csv
+Split,"cluster split MCC mean (5 reps, range)",0.650 (0.530-0.730),cluster_split_repeats.csv
+Split,cluster split sensitivity mean,0.729,cluster_split_repeats.csv
+Split,chemotype-holdout MCC range,-0.047 to 0.627,generalization_benchmark.csv
+Split,triazole holdout MCC / sens,0.148 / 0.369,generalization_benchmark.csv
+Split,Other holdout MCC / sens,0.197 / 0.241,generalization_benchmark.csv
+Split,actives recovered across all holdouts,"1,348/4,297 (31.4%)",generalization_benchmark.csv
+Conformal,"max |empirical-nominal|, exchangeable",0.032,conformal_results.csv
+Conformal,"max |empirical-nominal|, scaffold",0.123,conformal_results.csv
+Conformal,"error at nominal 0.20, scaffold",0.308,conformal_results.csv
+Conformal,"worst per-chemotype deviation, class-conditional",0.107,conformal_chemotype_validity.csv
+Conformal,"worst per-chemotype deviation, chemotype-conditional",0.072,conformal_chemotype_validity.csv
+Conformal,"accuracy at 50% retention, conformal vs kNN",93.7% vs 89.8%,conformal_vs_knnAD.csv
+Conformal,"accuracy at 70% retention, conformal vs kNN",90.4% vs 89.0%,conformal_vs_knnAD.csv
+External,panel scored / excluded as overlapping,79 scored; 24 of 105 excluded,external_panel_v2.csv
+External,accuracy,83.5% (66/79),external_validation_v2.csv
+External,majority-class baseline,74.7%,external_validation_v2.csv
+External,MCC / BA / AUC,0.558 / 0.774 / 0.908,external_validation_v2.csv
+External,anti-Candida agents recovered,13/20,external_validation_v2.csv
+External,echinocandins recovered,0/4,external_validation_v2.csv
+Docking,receptor / resolution,"PDB 5TZ1, 2.0 A, heme + VT-1161",redock_validation.json
+Docking,redock RMSD,1.53 A,redock_validation.json
+Docking,tetrazole N-Fe docked vs crystal,2.60 vs 2.25 A,redock_validation.json
+Docking,enrichment ROC-AUC [95% CI],"0.648 [0.52, 0.77]",docking_validation.csv
+Docking,EF 5% / Mann-Whitney p,2.9 / 0.0121,docking_validation.csv
+Docking,enrichment set composition,"30 actives, 57 decoys",docking_validation.csv
+Docking,gate threshold and precision,<= -10.5 kcal/mol; precision 0.50 vs 0.34 baseline,docking_report.md
+Docking,fluconazole / posaconazole score,-8.24 / -12.29 kcal/mol,pose_contacts.csv
+Design,molecules generated (total / per track),"20,500 / 10,250",generated_pool.csv
+Design,unique scaffolds / scaffold-novel,"12,778 / 19,169",generated_pool.csv
+Design,azole-excluded track: azole leakage,0,generated_pool.csv
+Design,control track triazoles rediscovered,"1,079",generated_pool.csv
+Design,median max-Tanimoto: design vs baseline,0.311 vs 0.500,generated_pool.csv / original_template_enumeration.csv
+Design,scaffold novelty: design vs baseline,91.5% vs 37.4%,generated_pool.csv / original_template_enumeration.csv
+Design,baseline size,"139 molecules, 26 scaffolds, all triazole",original_template_enumeration.csv
+Design,novelty vs predicted activity (Spearman),-0.052,generated_pool.csv
+Design,"novelty vs conformal p_active (Spearman, p)",0.004 (p = 0.6),generated_pool.csv
+Candidates,selected for docking / dual-evidence / Tier 1,62 / 15 / 4,final_candidates.csv
+Candidates,candidate median affinity,-9.75 kcal/mol,candidates_scored.csv
+Candidates,selectivity differential median,"-0.03 kcal/mol (32 favour fungal, 30 human)",candidates_scored.csv
+Candidates,Tier 1 max Tanimoto to training,0.25-0.38,final_candidates.csv
+Candidates,Tier 1 Tanimoto to nearest approved antifungal,0.135-0.236,final_candidates.csv
+Candidates,Tier 1 SA / QED range,3.15-3.45 / 0.53-0.64,final_candidates.csv
+Candidates,dual-evidence compounds removed by alert catalogues,7 of 15,final_candidates.csv
+Dataset,modelling pool (scaffold-assignable),"11,058",pool_accounting.json
+Dataset,"excluded: acyclic, no Murcko scaffold",187 (1.66%),pool_accounting.json
+Dataset,excluded subset active rate vs retained,57.2% vs 39.0%,pool_accounting.json
+External,PubChem names resolved / unique after dedup,105 / 105,pool_accounting.json
+External,excluded as overlapping (train / test),24 (20 / 4),pool_accounting.json
+Design,GA population / generations / seed pool,250 / 40 / 600,ga_parameters.json
+Design,GA crossover / mutation rate,0.65 / 0.35,ga_parameters.json
+Design,BRICS fragments (all / azole-free),857 / 829,ga_parameters.json
+Candidates,"fluconazole rank among 62 docked candidates (Vina, -8.24)","61 of 62 candidates score more strongly (more negative); 1 weaker (-7.95). The earlier phrase ""below 58 of 62"" was wrong.",data/candidates_scored.csv (affinity column)
+Docking,enrichment: actives among top 10 by Vina score,6 of 10 (3.45 expected at 30/87 base rate),data/docking_scores_enrichment.csv
+MMGBSA,CAL-028 50 ns DELTA TOTAL mean ± frame SD,-60.42092 ± 3.72364 kcal/mol,md/mmgbsa/results/MMGBSA_both_compounds_summary.csv
+MMGBSA,CAL-015 50 ns DELTA TOTAL mean ± frame SD,-59.46166 ± 3.44685 kcal/mol,md/mmgbsa/results/MMGBSA_both_compounds_summary.csv
+MMGBSA,frames per compound and number of 10 ns blocks,200 frames; 5 blocks,md/mmgbsa/results/MMGBSA_10ns_block_summary.csv

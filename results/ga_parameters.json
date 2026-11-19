@@ -1,0 +1,16 @@
+{
+  "algorithm": "graph-based genetic algorithm with NSGA-II non-dominated sorting and crowding-distance selection",
+  "population_size": 250,
+  "generations": 40,
+  "seed_pool": 600,
+  "initial_population": "250 valid molecules built by crossover/mutation from a 600-compound random sample of confirmed actives (random_state=7)",
+  "crossover_rate": 0.65,
+  "mutation_rate": 0.35,
+  "operator_detail": "crossover: both parents cut at one random acyclic single bond (RDKit FragmentOnBonds, dummyLabels [1*]); one fragment from each recombined by the reaction SMARTS '[*:1]-[1*].[1*]-[*:2]>>[*:1]-[*:2]'. mutation: one parent cut the same way, one fragment replaced by a random single-attachment-point BRICS fragment from the library. Up to 5 attempts per operator call.",
+  "selection": "binary tournament on (Pareto rank, crowding distance); survivor selection by front-filling to population size",
+  "fragment_library": "BRICS decomposition (minFragmentSize=3) of a chemotype-stratified sample of confirmed actives (up to 400 per chemotype, 1,398 molecules), retaining fragments of 3-22 heavy atoms; single-attachment-point fragments relabelled to [1*] and restricted to 2-18 heavy atoms (857 fragments; 829 after azole exclusion)",
+  "objectives": "predicted activity, novelty (1 - max Tanimoto to training), (4 - SAscore)/4, QED - all maximised, Pareto-ranked",
+  "hard_filters": "MW 250-550; LogP -1.0 to 5.5; HBD<=5; HBA<=10; RotB<=10; TPSA<=140; heavy atoms 17-40; >=1 ring; SAscore<=4.0; max Tanimoto to training <0.50; PAINS and Brenk clean; triazole/imidazole SMARTS excluded in the primary track",
+  "random_seed": 42,
+  "duplicate_handling": "SMILES-level memoisation; a molecule already in the pool is never re-scored or re-added"
+}

@@ -1,0 +1,138 @@
+{
+  "CAL028": {
+    "protein_RMSD_to_representative": {
+      "first": 1.214,
+      "median": 0.0,
+      "final": 1.359
+    },
+    "hbond_distances_A": {
+      "first": [
+        [
+          118,
+          "OH",
+          "O4",
+          2.7512938762266317
+        ],
+        [
+          379,
+          "N",
+          "O3",
+          2.882281235305778
+        ],
+        [
+          380,
+          "N",
+          "O4",
+          2.9621633229246767
+        ],
+        [
+          378,
+          "N",
+          "O3",
+          3.557327147724917
+        ]
+      ],
+      "median": [
+        [
+          118,
+          "OH",
+          "O4",
+          2.642754644057354
+        ],
+        [
+          379,
+          "N",
+          "O3",
+          2.965479806138458
+        ],
+        [
+          380,
+          "N",
+          "O4",
+          2.9488218391489767
+        ],
+        [
+          378,
+          "N",
+          "O3",
+          2.9547961087200636
+        ]
+      ],
+      "final": [
+        [
+          118,
+          "OH",
+          "O4",
+          2.9027259483168484
+        ],
+        [
+          379,
+          "N",
+          "O3",
+          2.8956753278177167
+        ],
+        [
+          380,
+          "N",
+          "O4",
+          2.9323570735418936
+        ],
+        [
+          378,
+          "N",
+          "O3",
+          2.941323179598393
+        ]
+      ]
+    },
+    "outputs": [
+      "/mnt/data/CYP51_Ligand_Dynamics_3D/CAL028_first_3D_pocket.png",
+      "/mnt/data/CYP51_Ligand_Dynamics_3D/CAL028_median_3D_pocket.png",
+      "/mnt/data/CYP51_Ligand_Dynamics_3D/CAL028_final_3D_pocket.png",
+      "/mnt/data/CYP51_Ligand_Dynamics_3D/CAL028_first_representative_final_pocket.png",
+      "/mnt/data/CYP51_Ligand_Dynamics_3D/CAL028_aligned_pose_overlay.png",
+      "/mnt/data/CYP51_Ligand_Dynamics_3D/CAL028_interactive_3D_snapshots.html"
+    ]
+  },
+  "CAL015": {
+    "protein_RMSD_to_representative": {
+      "first": 1.478,
+      "median": 0.0,
+      "final": 0.987
+    },
+    "hbond_distances_A": {
+      "first": [
+        [
+          508,
+          "O",
+          "N4",
+          3.37747776441313
+        ]
+      ],
+      "median": [
+        [
+          508,
+          "O",
+          "N4",
+          3.076016381772209
+        ]
+      ],
+      "final": [
+        [
+          508,
+          "O",
+          "N4",
+          2.692038692071294
+        ]
+      ]
+    },
+    "outputs": [
+      "/mnt/data/CYP51_Ligand_Dynamics_3D/CAL015_first_3D_pocket.png",
+      "/mnt/data/CYP51_Ligand_Dynamics_3D/CAL015_median_3D_pocket.png",
+      "/mnt/data/CYP51_Ligand_Dynamics_3D/CAL015_final_3D_pocket.png",
+      "/mnt/data/CYP51_Ligand_Dynamics_3D/CAL015_first_representative_final_pocket.png",
+      "/mnt/data/CYP51_Ligand_Dynamics_3D/CAL015_aligned_pose_overlay.png",
+      "/mnt/data/CYP51_Ligand_Dynamics_3D/CAL015_interactive_3D_snapshots.html"
+    ]
+  }
+}

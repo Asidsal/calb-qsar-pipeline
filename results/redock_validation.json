@@ -1,0 +1,8 @@
+{
+  "redock_rmsd": 1.526,
+  "redock_affinity": -12.0,
+  "crystal_N_Fe": 2.25,
+  "docked_N_Fe": 2.6,
+  "pdb": "5TZ1",
+  "resolution": 2.0
+}

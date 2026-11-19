@@ -1,0 +1,14 @@
+{
+  "raw_records": 25518,
+  "raw_compounds": 14979,
+  "after_range_filter": 14818,
+  "after_smiles_std": 14818,
+  "after_aggregation": 14267,
+  "after_physico_filter": 14267,
+  "after_greyzoneremoval": 11245,
+  "final_active": 4416,
+  "final_inactive": 6829,
+  "unique_scaffolds": 3342,
+  "active_threshold_ugml": 8.0,
+  "grey_zone_ugml": "4.0-16.0"
+}

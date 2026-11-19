@@ -1,0 +1,22 @@
+name: calb-qsar
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - rdkit=2026.09.2
+  - xgboost=3.4.2
+  - scikit-learn=1.9.1
+  - numpy=2.4.6
+  - pandas=3.1.1
+  - scipy=1.17.1
+  - shap=0.51.0
+  - umap-learn=0.5.12
+  - networkx=3.6.1
+  - matplotlib=3.11.2
+  - seaborn=0.13.2
+  - openpyxl=3.1.5
+  - tabulate=0.10.0
+  - jupyterlab
+  - pip
+# Docking: AutoDock Vina 1.2.7 (download from the Vina releases page) and Open Babel 3.x (conda-forge: openbabel).
+# The pickled model in models/ was written with xgboost 3.4.2; load it with the same version.

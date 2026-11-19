@@ -1,0 +1,12 @@
+id,docked_pose_smiles,ga_source_smiles,docked_vs_source,stereo_note
+CAL-015,CC/C=C(/F)[C@H](CNC(=O)c1ccn(CC2CCNCC2)n1)NC(=O)c1ccc(Cl)cc1,CCC=C(F)[C@H](CNC(=O)c1ccn(CC2CCNCC2)n1)NC(=O)c1ccc(Cl)cc1,differs (stereo added from docked geometry),alkene E/Z unspecified in source SMILES; docked as E/Z shown (opposite isomer to CAL-032)
+CAL-017,CN[C@H](C)CNC(=O)c1ccn(Cc2ccc(/C=C(\C)[C@@H]3CCCNC3)cc2)n1,CN[C@H](C)CNC(=O)c1ccn(Cc2ccc(C=C(C)C3CCCNC3)cc2)n1,differs (stereo added from docked geometry),alkene E/Z and piperidin-3-yl centre unspecified in source SMILES; docked geometry shown
+CAL-025,CC(C)CN(C)CC(=O)NC(=O)c1cccc(Cc2cccc3nc(N)nc(N)c23)c1,CC(C)CN(C)CC(=O)NC(=O)c1cccc(Cc2cccc3nc(N)nc(N)c23)c1,identical,all stereo specified in source / none present
+CAL-028,CN(C(=O)c1cnccn1)[C@@H](CNC(=O)c1ccn(Cc2ccc(F)cc2F)n1)C(=O)O,CN(C(=O)c1cnccn1)[C@@H](CNC(=O)c1ccn(Cc2ccc(F)cc2F)n1)C(=O)O,identical,one defined stereocentre; no ambiguous alkene
+CAL-032,CC/C=C(\F)[C@H](CNC(=O)c1ccn(CC2CCNCC2)n1)NC1CCCCCCC1,CCC=C(F)[C@H](CNC(=O)c1ccn(CC2CCNCC2)n1)NC1CCCCCCC1,differs (stereo added from docked geometry),alkene E/Z unspecified in source SMILES; docked as E/Z shown (opposite isomer to CAL-015)
+CAL-050,Nc1nc(N)c2c(Cc3cc(-c4cnccn4)ccc3Br)cccc2n1,Nc1nc(N)c2c(Cc3cc(-c4cnccn4)ccc3Br)cccc2n1,identical,all stereo specified in source / none present
+CAL-051,Cc1cc(C[C@@H]2C[C@H](NCc3ccc(-n4cncn4)cc3)CC[C@H]2O)ccc1F,Cc1cc(C[C@@H]2C[C@H](NCc3ccc(-n4cncn4)cc3)CC[C@H]2O)ccc1F,identical,all stereo specified in source / none present
+CAL-053,O=C(Cc1noc2ccccc12)NCc1ccc(-n2cncn2)cc1,O=C(Cc1noc2ccccc12)NCc1ccc(-n2cncn2)cc1,identical,all stereo specified in source / none present
+CAL-058,O=C(NCc1ccc(F)c(F)c1)Nc1ccc(OC2CCN(n3cncn3)CC2)cc1,O=C(NCc1ccc(F)c(F)c1)Nc1ccc(OC2CCN(n3cncn3)CC2)cc1,identical,all stereo specified in source / none present
+fluconazole,OC(Cn1cncn1)(Cn1cncn1)c1ccc(F)cc1F,n/a (reference drug),n/a,reference drug
+posaconazole,CC[C@@H](C)n1ncn(-c2ccc(N3CCN(c4ccc(OC[C@@H]5CO[C@@](Cn6cncn6)(c6ccc(F)cc6F)O5)cc4)CC3)cc2)c1=O,n/a (reference drug),n/a,reference drug

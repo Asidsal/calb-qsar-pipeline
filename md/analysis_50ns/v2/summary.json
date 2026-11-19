@@ -1,0 +1,106 @@
+{
+  "CAL028": {
+    "frames": 5000,
+    "protein_CA_atoms": 484,
+    "residue_labeling": "PDB numbering; prepared protein residue index + 45",
+    "mean_ligand_RMSD_A": 0.9191414344191551,
+    "mean_protein_CA_RMSD_A": 1.388987887034541,
+    "mean_Fe_S_A": 2.643903731060028,
+    "imaging_warnings": [],
+    "source_topology": "cal028.prmtop",
+    "top_contacts": [
+      {
+        "residue": "MET508",
+        "occupancy_percent": 100.0
+      },
+      {
+        "residue": "PHE380",
+        "occupancy_percent": 100.0
+      },
+      {
+        "residue": "ILE379",
+        "occupancy_percent": 100.0
+      },
+      {
+        "residue": "SER378",
+        "occupancy_percent": 100.0
+      },
+      {
+        "residue": "TYR118",
+        "occupancy_percent": 100.0
+      },
+      {
+        "residue": "LEU376",
+        "occupancy_percent": 100.0
+      },
+      {
+        "residue": "HIE377",
+        "occupancy_percent": 100.0
+      },
+      {
+        "residue": "GLY307",
+        "occupancy_percent": 99.9
+      },
+      {
+        "residue": "TYR132",
+        "occupancy_percent": 99.84
+      },
+      {
+        "residue": "PHE233",
+        "occupancy_percent": 99.16
+      }
+    ]
+  },
+  "CAL015": {
+    "frames": 5000,
+    "protein_CA_atoms": 484,
+    "residue_labeling": "PDB numbering; prepared protein residue index + 45",
+    "mean_ligand_RMSD_A": 1.5793240648388862,
+    "mean_protein_CA_RMSD_A": 1.5128496867355912,
+    "mean_Fe_S_A": 2.6580548666000365,
+    "imaging_warnings": [],
+    "source_topology": "CAL-015/N14_frame_corrected/system.prmtop",
+    "top_contacts": [
+      {
+        "residue": "MET508",
+        "occupancy_percent": 100.0
+      },
+      {
+        "residue": "ILE131",
+        "occupancy_percent": 100.0
+      },
+      {
+        "residue": "TYR118",
+        "occupancy_percent": 100.0
+      },
+      {
+        "residue": "TYR132",
+        "occupancy_percent": 99.98
+      },
+      {
+        "residue": "GLY303",
+        "occupancy_percent": 99.98
+      },
+      {
+        "residue": "LEU376",
+        "occupancy_percent": 99.98
+      },
+      {
+        "residue": "GLY307",
+        "occupancy_percent": 99.94
+      },
+      {
+        "residue": "THR122",
+        "occupancy_percent": 99.9
+      },
+      {
+        "residue": "SER378",
+        "occupancy_percent": 99.82
+      },
+      {
+        "residue": "PHE126",
+        "occupancy_percent": 98.86
+      }
+    ]
+  }
+}

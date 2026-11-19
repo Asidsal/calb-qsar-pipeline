@@ -1,0 +1,14 @@
+{
+  "curated": 11245,
+  "modelling_pool": 11058,
+  "excluded": 187,
+  "reason": "acyclic compounds have an empty Bemis-Murcko scaffold and cannot be assigned to a scaffold group",
+  "excluded_all_acyclic": true,
+  "excluded_active_rate": 0.5722,
+  "retained_active_rate": 0.3897,
+  "panel_resolved": 105,
+  "panel_unique": 105,
+  "panel_excluded_overlap": 24,
+  "panel_external": 81,
+  "panel_scored": 79
+}

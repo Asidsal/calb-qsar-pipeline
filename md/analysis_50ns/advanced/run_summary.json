@@ -1,0 +1,216 @@
+{
+  "CAL028": {
+    "n_analyzed_frames": 5000,
+    "n_sasa_frames": 200,
+    "n_hbond_sampled_frames": 1000,
+    "ligand_RMSD_original_docking_mean_A": 2.158031655097022,
+    "ligand_RMSD_firstproduction_mean_A": 0.9191414411246777,
+    "bound_ligand_SASA_mean_A2": 32.913097333908084,
+    "buried_ligand_SASA_mean_A2": 645.3148897266387,
+    "direct_ligand_protein_Hbond_mean_per_sample": 3.538,
+    "mean_Fe_S_A": 2.6439037157535554,
+    "top_direct_hbonds": [
+      {
+        "hydrogen_bond": "TYR118:OH -> LIG485:O4",
+        "n_sampled_frames": 993,
+        "occupancy_percent": 99.3
+      },
+      {
+        "hydrogen_bond": "ILE379:N -> LIG485:O3",
+        "n_sampled_frames": 990,
+        "occupancy_percent": 99.0
+      },
+      {
+        "hydrogen_bond": "PHE380:N -> LIG485:O4",
+        "n_sampled_frames": 890,
+        "occupancy_percent": 89.0
+      },
+      {
+        "hydrogen_bond": "SER378:N -> LIG485:O3",
+        "n_sampled_frames": 658,
+        "occupancy_percent": 65.8
+      },
+      {
+        "hydrogen_bond": "ILE379:N -> LIG485:O4",
+        "n_sampled_frames": 7,
+        "occupancy_percent": 0.7
+      }
+    ],
+    "top_contacts": [
+      {
+        "contact_type": "all_heavy",
+        "residue": "HIE377",
+        "n_frames": 5000,
+        "occupancy_percent": 100.0
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "ILE379",
+        "n_frames": 5000,
+        "occupancy_percent": 100.0
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "LEU376",
+        "n_frames": 5000,
+        "occupancy_percent": 100.0
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "MET508",
+        "n_frames": 5000,
+        "occupancy_percent": 100.0
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "PHE380",
+        "n_frames": 5000,
+        "occupancy_percent": 100.0
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "SER378",
+        "n_frames": 5000,
+        "occupancy_percent": 100.0
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "TYR118",
+        "n_frames": 5000,
+        "occupancy_percent": 100.0
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "GLY307",
+        "n_frames": 4995,
+        "occupancy_percent": 99.9
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "TYR132",
+        "n_frames": 4992,
+        "occupancy_percent": 99.84
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "PHE233",
+        "n_frames": 4958,
+        "occupancy_percent": 99.16
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "SER507",
+        "n_frames": 4911,
+        "occupancy_percent": 98.22
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "GLY308",
+        "n_frames": 4871,
+        "occupancy_percent": 97.42
+      }
+    ]
+  },
+  "CAL015": {
+    "n_analyzed_frames": 5000,
+    "n_sasa_frames": 200,
+    "n_hbond_sampled_frames": 1000,
+    "ligand_RMSD_original_docking_mean_A": 2.5241046394651816,
+    "ligand_RMSD_firstproduction_mean_A": 1.579324062371254,
+    "bound_ligand_SASA_mean_A2": 47.471577305793765,
+    "buried_ligand_SASA_mean_A2": 678.6909934949875,
+    "direct_ligand_protein_Hbond_mean_per_sample": 1.115,
+    "mean_Fe_S_A": 2.6580548583984376,
+    "top_direct_hbonds": [
+      {
+        "hydrogen_bond": "LIG22938:N4 -> MET508:O",
+        "n_sampled_frames": 971,
+        "occupancy_percent": 97.1
+      },
+      {
+        "hydrogen_bond": "LIG22938:N5 -> TYR132:OH",
+        "n_sampled_frames": 137,
+        "occupancy_percent": 13.7
+      },
+      {
+        "hydrogen_bond": "LIG22938:N4 -> HIE377:ND1",
+        "n_sampled_frames": 7,
+        "occupancy_percent": 0.7
+      }
+    ],
+    "top_contacts": [
+      {
+        "contact_type": "all_heavy",
+        "residue": "ILE131",
+        "n_frames": 5000,
+        "occupancy_percent": 100.0
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "MET508",
+        "n_frames": 5000,
+        "occupancy_percent": 100.0
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "TYR118",
+        "n_frames": 5000,
+        "occupancy_percent": 100.0
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "GLY303",
+        "n_frames": 4999,
+        "occupancy_percent": 99.98
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "LEU376",
+        "n_frames": 4999,
+        "occupancy_percent": 99.98
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "TYR132",
+        "n_frames": 4999,
+        "occupancy_percent": 99.98
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "GLY307",
+        "n_frames": 4997,
+        "occupancy_percent": 99.94
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "THR122",
+        "n_frames": 4995,
+        "occupancy_percent": 99.9
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "SER378",
+        "n_frames": 4991,
+        "occupancy_percent": 99.82
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "PHE126",
+        "n_frames": 4943,
+        "occupancy_percent": 98.86
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "THR311",
+        "n_frames": 4934,
+        "occupancy_percent": 98.68
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "PHE380",
+        "n_frames": 4930,
+        "occupancy_percent": 98.6
+      }
+    ]
+  }
+}

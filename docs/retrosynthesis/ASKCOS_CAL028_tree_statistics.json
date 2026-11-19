@@ -1,0 +1,13 @@
+{
+  "source": "https://askcos.mit.edu/results?shared=0a31ab2d-cd9b-4b72-a129-7f43a8fd4bfb",
+  "source_json_sha256": "43b7d9f6740a407403c0087d361e3dd67f1e1bb2b5c18fd9a699c46a24aeed74",
+  "trees": 200,
+  "4_step_trees": 56,
+  "5_step_trees": 144,
+  "distinct_reaction_smiles": 22,
+  "first_disconnection_methylating_reagent": {
+    "CI": 68,
+    "C=O": 66,
+    "CO": 66
+  }
+}

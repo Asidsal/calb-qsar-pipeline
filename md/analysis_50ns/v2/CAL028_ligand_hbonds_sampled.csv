@@ -1,0 +1,6 @@
+hydrogen_bond,sampled_occupancy_percent
+TYR118:OH -> LIG485:O4,99.3
+ILE379:N -> LIG485:O3,99.0
+PHE380:N -> LIG485:O4,89.0
+SER378:N -> LIG485:O3,65.8
+ILE379:N -> LIG485:O4,0.7

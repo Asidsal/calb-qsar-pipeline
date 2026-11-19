@@ -1,0 +1,17 @@
+{
+  "train_compounds": 8883,
+  "test_compounds": 2175,
+  "train_active": 3386,
+  "test_active": 923,
+  "train_active_rate": 0.3812,
+  "test_active_rate": 0.4244,
+  "train_scaffolds": 2672,
+  "test_scaffolds": 669,
+  "scaffold_overlap": 0,
+  "nn_tanimoto_mean": 0.5791,
+  "nn_tanimoto_median": 0.6226,
+  "ecfp4_bits": 2048,
+  "rdkit_descriptors": 211,
+  "random_seed": 42,
+  "split_method": "stratified_scaffold_split_v2"
+}

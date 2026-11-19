@@ -1,0 +1,242 @@
+{
+  "system": "CAL015",
+  "topology_source": "CAL-015/N14_frame_corrected/system.prmtop",
+  "trajectory_files": [
+    "CAL-015/production_50ns_1fs/ns_001/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_002/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_003/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_004/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_005/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_006/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_007/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_008/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_009/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_010/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_011/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_012/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_013/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_014/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_015/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_016/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_017/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_018/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_019/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_020/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_021/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_022/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_023/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_024/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_025/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_026/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_027/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_028/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_029/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_030/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_031/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_032/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_033/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_034/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_035/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_036/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_037/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_038/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_039/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_040/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_041/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_042/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_043/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_044/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_045/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_046/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_047/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_048/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_049/trajectory.dcd",
+    "CAL-015/production_50ns_1fs/ns_050/trajectory.dcd"
+  ],
+  "analysis_settings": {
+    "sasa_stride_frames": 25,
+    "sasa_sphere_points": 80,
+    "hbond_stride_frames": 5,
+    "contact_cutoff_A": 4.5,
+    "sasa_waters_excluded": true
+  },
+  "protein_CA_count": 484,
+  "original_pose_CA_alignment_RMSD_A": 1.3586793136786954,
+  "original_pose_mapping": {
+    "0": 75226,
+    "1": 75227,
+    "2": 75228,
+    "3": 75229,
+    "4": 75230,
+    "5": 75231,
+    "6": 75232,
+    "7": 75233,
+    "8": 75234,
+    "9": 75235,
+    "10": 75236,
+    "11": 75237,
+    "12": 75238,
+    "13": 75239,
+    "14": 75240,
+    "15": 75241,
+    "16": 75242,
+    "17": 75243,
+    "18": 75244,
+    "19": 75245,
+    "20": 75246,
+    "21": 75247,
+    "22": 75248,
+    "23": 75249,
+    "24": 75250,
+    "25": 75251,
+    "26": 75252,
+    "28": 75254,
+    "27": 75253,
+    "29": 75255,
+    "31": 75257,
+    "30": 75256
+  },
+  "stereochemistry_from_original_3D_SDF": [
+    {
+      "bond_atoms_SDF": [
+        28,
+        27
+      ],
+      "reference_geometry": "STEREOE",
+      "original_dihedral_deg": 178.71356396949275
+    }
+  ],
+  "representative_frames": {
+    "first": {
+      "time_ns": 0.01,
+      "ns_segment": 1,
+      "frame_in_segment": 0,
+      "pdb": "CAL015_first_protein_heme_ligand.pdb",
+      "sdf": "CAL015_first_ligand_heavy.sdf"
+    },
+    "median_pose": {
+      "time_ns": 37.41,
+      "ns_segment": 38,
+      "frame_in_segment": 40,
+      "pdb": "CAL015_median_pose_protein_heme_ligand.pdb",
+      "sdf": "CAL015_median_pose_ligand_heavy.sdf"
+    },
+    "final": {
+      "time_ns": 50.0,
+      "ns_segment": 50,
+      "frame_in_segment": 99,
+      "pdb": "CAL015_final_protein_heme_ligand.pdb",
+      "sdf": "CAL015_final_ligand_heavy.sdf"
+    }
+  },
+  "pymol_render_script": "CAL015_publication_pose.pml",
+  "results": {
+    "n_analyzed_frames": 5000,
+    "n_sasa_frames": 200,
+    "n_hbond_sampled_frames": 1000,
+    "ligand_RMSD_original_docking_mean_A": 2.5241046394651816,
+    "ligand_RMSD_firstproduction_mean_A": 1.579324062371254,
+    "bound_ligand_SASA_mean_A2": 47.471577305793765,
+    "buried_ligand_SASA_mean_A2": 678.6909934949875,
+    "direct_ligand_protein_Hbond_mean_per_sample": 1.115,
+    "mean_Fe_S_A": 2.6580548583984376,
+    "top_direct_hbonds": [
+      {
+        "hydrogen_bond": "LIG22938:N4 -> MET508:O",
+        "n_sampled_frames": 971,
+        "occupancy_percent": 97.1
+      },
+      {
+        "hydrogen_bond": "LIG22938:N5 -> TYR132:OH",
+        "n_sampled_frames": 137,
+        "occupancy_percent": 13.7
+      },
+      {
+        "hydrogen_bond": "LIG22938:N4 -> HIE377:ND1",
+        "n_sampled_frames": 7,
+        "occupancy_percent": 0.7
+      }
+    ],
+    "top_contacts": [
+      {
+        "contact_type": "all_heavy",
+        "residue": "ILE131",
+        "n_frames": 5000,
+        "occupancy_percent": 100.0
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "MET508",
+        "n_frames": 5000,
+        "occupancy_percent": 100.0
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "TYR118",
+        "n_frames": 5000,
+        "occupancy_percent": 100.0
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "GLY303",
+        "n_frames": 4999,
+        "occupancy_percent": 99.98
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "LEU376",
+        "n_frames": 4999,
+        "occupancy_percent": 99.98
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "TYR132",
+        "n_frames": 4999,
+        "occupancy_percent": 99.98
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "GLY307",
+        "n_frames": 4997,
+        "occupancy_percent": 99.94
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "THR122",
+        "n_frames": 4995,
+        "occupancy_percent": 99.9
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "SER378",
+        "n_frames": 4991,
+        "occupancy_percent": 99.82
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "PHE126",
+        "n_frames": 4943,
+        "occupancy_percent": 98.86
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "THR311",
+        "n_frames": 4934,
+        "occupancy_percent": 98.68
+      },
+      {
+        "contact_type": "all_heavy",
+        "residue": "PHE380",
+        "n_frames": 4930,
+        "occupancy_percent": 98.6
+      }
+    ]
+  },
+  "alkene_geometry": {
+    "alkene_1": {
+      "SDF_assignment": "STEREOE",
+      "original_dihedral_deg": 178.71356396949275,
+      "fraction_frames_same_geometric_side": 1.0
+    }
+  }
+}

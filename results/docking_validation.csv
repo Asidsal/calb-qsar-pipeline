@@ -1,0 +1,2 @@
+n_docked,n_actives,active_fraction,roc_auc,EF5,EF10,EF20,mannwhitney_p,auc_lo,auc_hi
+87,30,0.345,0.648,2.9,1.93,1.19,0.0121,0.519,0.769

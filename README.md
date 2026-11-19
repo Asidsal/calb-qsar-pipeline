@@ -8,7 +8,7 @@ This repository contains research **code, structured input data, model/result ta
 ## Contents
 
 - [Research scope and findings](#research-scope-and-findings)
-- [Current public repository layout](#current-public-repository-layout)
+- [Repository layout](#repository-layout)
 - [Research reproducibility and interpretation](#research-reproducibility-and-interpretation)
 - [Citation and license](#citation-and-license)
 - [Synthesis resources and molecular dynamics protocol](#synthesis-resources-and-molecular-dynamics-protocol)
@@ -26,22 +26,24 @@ This repository contains research **code, structured input data, model/result ta
 | **MM/GBSA:** | 200 frames per compound over five 10 ns blocks, GB-OBC2 (igb=5), mbondi2 radii and 0.150 M salt. Frame-averaged ΔTOTAL: **CAL-028 −60.42 ± 3.72 kcal/mol** and **CAL-015 −59.46 ± 3.45 kcal/mol**, reported as MM/GBSA energies without entropic correction. |
 | **Synthesis planning:** | a convergent **proposed retrosynthetic route for CAL-028**, with a stereodefined N-methyl-L-Dap building block, N-benzylpyrazole coupling fragment and amide-convergence strategy. See [proposed synthesis scheme](docs/retrosynthesis/CAL028_proposed_scheme.md). |
 
-## Current public repository layout
+## Repository layout
 
 | Path | Public contents |
 | --- | --- |
-| `data/CAlbicans_curated.csv` | Curated ChEMBL whole-cell MIC records |
-| `notebooks/` | Curation, split/feature development, classification and the GA design notebook |
-| `docs/retrosynthesis/` | Proposed CAL-028 convergent synthesis scheme, stereodefined intermediate SMILES, route-step CSV and RDKit drawing script |
-| `md/analysis_50ns/` | Summary of the CAL-028 and CAL-015 50 ns trajectory measurements |
-| `md/mmgbsa/` | Completed MM/GBSA component means and five time-block results |
-| `requirements.txt` | Core notebook environment specification |
+| `data/` | Curated ChEMBL activity data, model inputs and external panels |
+| `notebooks/`, `src/` | Curation, QSAR, conformal prediction and GA design workflows |
+| `models/`, `results/` | Trained predictor, validation tables and candidate registries |
+| `docking/` | CYP51 docking inputs and pose files |
+| `md/` | Production scripts, derived trajectory analyses, visualizations and MM/GBSA summaries |
+| `docs/retrosynthesis/` | Proposed CAL-028 route, intermediate structures and ASKCOS tree export |
 
-The extended research archive also preserves the molecular-generation source, detailed docking records, trained model, complete derived trajectories and visualization resources. Those larger research assets are distributed separately from the current public GitHub files. The full production DCD/AMBER files and per-frame GB results remain in separate project storage.
+Full production DCD trajectories, their AMBER inputs and raw per-frame MM/GBSA logs are held in separate project storage. See the [release notes](REPOSITORY_RELEASE_NOTES.md) for the package scope.
 
 ## Research reproducibility and interpretation
 
 The repository provides curation and modelling notebooks and derived MD/MM/GBSA statistics. The simulation sources use AMBER topology and DCD trajectories; MM/GBSA uses the AmberTools `MMPBSA.py` single-trajectory protocol with heme included in the receptor. The proposed CAL-028 retrosynthesis records specific intermediate structures and transformations, with a structure-bearing diagram reproducible from the RDKit drawing script.
+
+Create the QSAR environment with `conda env create -f environment.yml` and activate it with `conda activate calb-qsar`. Run the notebooks from the repository root so their relative paths resolve. The exported source cells in [src/executed_cells](src/executed_cells/INDEX.md) document how individual result tables were produced. Run `python tests/test_extension_integrity.py` for the MD data checks and `python tests/test_ga_scoring.py` for GA scoring.
 
 The computational findings are interpreted in the QSAR, docking, MD and MM/GBSA frameworks described in their source records; their role is to prioritize and characterize new antifungal chemical matter.
 

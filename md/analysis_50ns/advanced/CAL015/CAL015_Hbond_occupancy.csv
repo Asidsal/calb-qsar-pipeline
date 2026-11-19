@@ -1,0 +1,4 @@
+hydrogen_bond,n_sampled_frames,occupancy_percent
+LIG22938:N4 -> MET508:O,971,97.1
+LIG22938:N5 -> TYR132:OH,137,13.7
+LIG22938:N4 -> HIE377:ND1,7,0.7
