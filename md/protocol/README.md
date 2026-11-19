@@ -1,14 +1,14 @@
-<h1 align="center">Executed 50 ns CYP51 molecular dynamics protocol</h1>
+<h1 align="center">50 ns CYP51 molecular dynamics protocol</h1>
 
-This directory contains the **original RunPod OpenMM production scripts** recovered from the network volume on 18 November 2026. These files document the production calculations and input-state records.
+This directory contains the OpenMM production scripts, simulation settings and input-state records for the CAL-028 and CAL-015 CYP51 complexes.
 
 
 ## Contents
 
 - [Production settings](#production-settings)
-- [Archived source scripts](#archived-source-scripts)
+- [Production scripts](#production-scripts)
 - [Protein force field](#protein-force-field)
-- [Other archived data](#other-archived-data)
+- [Simulation data](#simulation-data)
 
 ## Production settings
 
@@ -39,20 +39,20 @@ This directory contains the **original RunPod OpenMM production scripts** recove
 | Ligand net charge | −1 e | +1 e |
 | Heme | IC6 ferric, five-coordinate bonded Fe–S and Fe–N | IC6 ferric, same connectivity |
 
-The starting box is extracted from the saved AMBER topologies; dimensions fluctuate under NPT dynamics. Topology audit: water oxygen charge −0.834 e, each water hydrogen +0.417 e. Counterions neutralize the solvated complexes.
+The starting box is extracted from the saved AMBER topologies; dimensions fluctuate under NPT dynamics. Water oxygen charge −0.834 e, each water hydrogen +0.417 e. Counterions neutralize the solvated complexes.
 
-## Archived source scripts
+## Production scripts
 
-- [`CAL028_50ns.py`](CAL028_50ns.py): verified original CAL-028 production script, 2 fs, segmented GPU execution, topology and input-state SHA-256 validation
-- [`CAL015_production_50ns_1fs.py`](CAL015_production_50ns_1fs.py): original executed CAL-015 production script, 1 fs after NPT retry, segmented checkpoints and heme-geometry monitoring
-- [`CAL028_protocol.json`](CAL028_protocol.json): execution manifest from the RunPod volume, including OpenMM version, timestep, and hashes
+- [`CAL028_50ns.py`](CAL028_50ns.py): CAL-028 production script, 2 fs, segmented GPU execution, topology and input-state SHA-256 validation
+- [`CAL015_production_50ns_1fs.py`](CAL015_production_50ns_1fs.py): CAL-015 production script, 1 fs timestep, segmented checkpoints and heme-geometry monitoring
+- [`CAL028_protocol.json`](CAL028_protocol.json): simulation manifest, including OpenMM version, timestep, and hashes
 
-CAL-028 used a 10 ps post-equilibration warm-up that was excluded from the reported production timeline. The CAL-015 source loaded a successful 1 fs NPT equilibration endpoint before production. In both systems the force field was read from prebuilt AMBER `.prmtop` topologies. These production scripts document the executed simulation settings; the *initial LEaP parameter-generation commands* are a separate provenance item and are not inferred solely from the `.prmtop` files.
+CAL-028 used a 10 ps post-equilibration warm-up excluded from the production timeline. CAL-015 production started from the endpoint of 1 fs NPT equilibration. Both systems used AMBER `.prmtop` topology files containing the force-field parameters.
 
 ## Protein force field
 
 The CYP51 protein was parameterized using the AMBER ff14SB force field (Maier et al., 2015; DOI: [10.1021/acs.jctc.5b00255](https://doi.org/10.1021/acs.jctc.5b00255)). Ligands were modeled with GAFF2 and AM1-BCC charges, and the ferric heme group with IC6 parameters. Both production AMBER topologies contain 484 protein Cα atoms assigned atom type `CX`, with no CMAP correction entries.
 
-## Other archived data
+## Simulation data
 
-The ~8.44 GiB DCD production trajectories and full AMBER parameter/coordinate and checkpoint files are retained in project storage. This repository includes processing outputs and scripts; release/deposition of the large simulation binary files can use a dedicated archival record.
+The ~8.44 GiB DCD production trajectories and full AMBER parameter/coordinate and checkpoint files are retained in project storage. This repository contains the processing outputs and analysis scripts.
